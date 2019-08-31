@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REGISTRATION FORM</title>
+
+    <script> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function checkPassword(form) { 
+                pwd = form.pwd.value; 
+                cpwd = form.cpwd.value; 
+  
+                // If password not entered 
+                if (pwd == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (cpwd == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (pwd != cpwd) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    alert("Password Match: Welcome to GeeksforGeeks!") 
+                    return true; 
+                } 
+            } 
+        </script> 
+
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+
+        <div class="paypark">
+                <h1>PAYPARK</h1>
+    
+            </div>
+
+     <div class="loginbox">
+        <img src=LMN-TRIX.png class="LMN-TRIX">
+        <h1>SIGN UP HERE</h1>
+        <form onSubmit = "return checkPassword(this)">
+            <p>USER NAME</p>
+            <input type="text" name="" placeholder="Enter UserName" required>
+            <p>PASSWORD</p>
+            <input type="password" name="pwd" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <p>CONFIRM PASSWORD</p>
+            <input type="password" name="cpwd" placeholder="Confirm Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <p>EMAIL</p>
+            <input type="text" name="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <input type="submit" name="" value="SIGNUP" ><br><br>
+        </form>
+
+
+    </div>  
+</body>
+</html>

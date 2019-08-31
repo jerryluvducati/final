@@ -1,0 +1,81 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url(parking.jpg);
+    background-size: cover;
+    background-position: fill;
+    font-family: sans-serif;
+    
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.LMN-TRIX{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 100px);
+    padding-left: 25px;
+}
+h1{
+    margin: 0%;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.loginbox p{
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold; 
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px; 
+}
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    background-position: 1px solid#fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline:none;
+    background: #fb2525;
+    color: #fff;
+    font-size: 180x;
+    border-radius: 20px;
+    height: 30px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:yellow;
+    color: #000;
+}
+@media(min-width: 600px) {
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.paypark h1{
+    font-size: 80px;
+    padding-right: 50px;
+    color:whitesmoke;
+    padding-left: 70px;
+}
